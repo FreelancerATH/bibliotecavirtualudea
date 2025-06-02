@@ -63,7 +63,7 @@ const BookDetailSection: React.FC = () => {
             className="flex-shrink-0 flex justify-center"
           >
             <Image
-              src={`http://localhost:4000${book.portadaUrl.startsWith("/") ? book.portadaUrl : "/" + book.portadaUrl}`}
+              src={book.portadaUrl}
               width={200}
               height={200}
               alt="Portada del libro"
@@ -125,7 +125,7 @@ const BookDetailSection: React.FC = () => {
               </button>
 
               <iframe
-                src={`http://localhost:4000${book.archivoUrl.startsWith("/") ? book.archivoUrl : "/" + book.archivoUrl}`}
+                src={book.archivoUrl}
                 className="w-full h-full border-none"
                 title="PDF Viewer"
               />

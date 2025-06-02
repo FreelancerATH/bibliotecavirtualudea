@@ -166,7 +166,7 @@ export default function LibrosPorMateriaPage({
               >
                 <div className="relative h-64 overflow-hidden">
                   <Image
-                    src={`http://localhost:4000${book.image.startsWith("/") ? book.image : "/" + book.image}`}
+                    src={book.image}
                     alt={book.title}
                     width={300}
                     height={400}

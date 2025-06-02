@@ -71,7 +71,7 @@ export default function Book() {
           whileHover={{ scale: 1.08, transition: { duration: 0.15 } }}
         >
           <Image
-  src={`http://localhost:4000${book.image.startsWith("/") ? book.image : "/" + book.image}`}
+  src={book.image}
   alt={book.title}
   width={200}
   height={200}

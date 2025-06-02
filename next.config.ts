@@ -4,9 +4,14 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'localhost', // Solo el hostname, no el puerto
-        pathname: '/portadas/**',
+        protocol: 'https',
+        hostname: 'res.cloudinary.com', // Solo el hostname, no el puerto
+        pathname: '**/portadas/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'mega.nz',
+        pathname: '**/file/**'
       },
     ],
   },
