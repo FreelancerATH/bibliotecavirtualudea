@@ -10,7 +10,7 @@ export default function Page() {
   const [isAdmin, setIsAdmin] = useState(false)
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 px-4 py-4">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 px-2 py-2">
       {/* Contenedor principal solo para título y switch */}
       <div className="w-full max-w-4xl mb-2">
         {/* Título y descripción en diseño horizontal mejorado */}
@@ -64,7 +64,7 @@ export default function Page() {
         </motion.div>
 
         {/* Switch con menos margen - centrado */}
-        <div className="flex justify-center mb-3">
+        <div className="flex py-12 sm:py-4 justify-center mb-12">
           <div className="flex gap-4 p-2 bg-gray-100/50 rounded-xl">
             {/* Botón Alumno */}
             <motion.button

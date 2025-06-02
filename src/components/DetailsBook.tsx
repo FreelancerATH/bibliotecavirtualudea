@@ -47,6 +47,8 @@ const BookDetailSection: React.FC = () => {
 
   if (!book) return <p className="text-center py-10">Cargando...</p>;
 
+  console.log(book.archivoUrl)
+
   return (
     <>
       <motion.section
